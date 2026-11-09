@@ -153,7 +153,7 @@ sharedAudio.addEventListener("error", () => {
   activeButton = null;
 });
 
-fetch("./data/samples.json?v=20261109-4")
+fetch("./data/samples.json?v=20261109-5")
   .then((response) => {
     if (!response.ok) throw new Error("샘플 목록을 불러오지 못했습니다.");
     return response.json();
