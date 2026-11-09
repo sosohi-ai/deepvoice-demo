@@ -1,29 +1,11 @@
 [
   {
-    "label": "SPEAKER p229",
+    "label": "SPEAKER p247",
     "audio": {
-      "original": { "src": "./audio/original/p229_210_mic1.wav", "text": "It is not satisfied with the standard of fire safety provisions." },
-      "deepvoice": { "src": "./audio/original_tts/p229_210_mic1__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
-      "defended": { "src": "./audio/defended/p229_210_mic1.wav", "text": "It is not satisfied with the standard of fire safety provisions." },
-      "defendedDeepvoice": { "src": "./audio/defended_tts/p229_210_mic1__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
-    }
-  },
-  {
-    "label": "SPEAKER p231",
-    "audio": {
-      "original": { "src": "./audio/original/p231_199_mic1.wav", "text": "Indeed, he sees a shortage of skilled workers on the horizon." },
-      "deepvoice": { "src": "./audio/original_tts/p231_199_mic1__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
-      "defended": { "src": "./audio/defended/p231_199_mic1.wav", "text": "Indeed, he sees a shortage of skilled workers on the horizon." },
-      "defendedDeepvoice": { "src": "./audio/defended_tts/p231_199_mic1__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
-    }
-  },
-  {
-    "label": "SPEAKER p236",
-    "audio": {
-      "original": { "src": "./audio/original/p236_051_mic1.wav", "text": "They just thought it was extremely good acting." },
-      "deepvoice": { "src": "./audio/original_tts/p236_051_mic1__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
-      "defended": { "src": "./audio/defended/p236_051_mic1.wav", "text": "They just thought it was extremely good acting." },
-      "defendedDeepvoice": { "src": "./audio/defended_tts/p236_051_mic1__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
+      "original": { "src": "./audio/original/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
+      "deepvoice": { "src": "./audio/original_tts/p247_253_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
+      "defended": { "src": "./audio/defended/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
+      "defendedDeepvoice": { "src": "./audio/defended_tts/p247_253_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
     }
   },
   {
@@ -36,39 +18,12 @@
     }
   },
   {
-    "label": "SPEAKER p243",
-    "audio": {
-      "original": { "src": "./audio/original/p243_232_mic2.wav", "text": "The mother and daughter had moved into the property about six months ago." },
-      "deepvoice": { "src": "./audio/original_tts/p243_232_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
-      "defended": { "src": "./audio/defended/p243_232_mic2.wav", "text": "The mother and daughter had moved into the property about six months ago." },
-      "defendedDeepvoice": { "src": "./audio/defended_tts/p243_232_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
-    }
-  },
-  {
-    "label": "SPEAKER p247",
-    "audio": {
-      "original": { "src": "./audio/original/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
-      "deepvoice": { "src": "./audio/original_tts/p247_253_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
-      "defended": { "src": "./audio/defended/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
-      "defendedDeepvoice": { "src": "./audio/defended_tts/p247_253_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
-    }
-  },
-  {
     "label": "SPEAKER p257",
     "audio": {
       "original": { "src": "./audio/original/p257_018_mic2.wav", "text": "Aristotle thought that the rainbow was caused by reflection of the sun's rays by the rain." },
       "deepvoice": { "src": "./audio/original_tts/p257_018_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
       "defended": { "src": "./audio/defended/p257_018_mic2.wav", "text": "Aristotle thought that the rainbow was caused by reflection of the sun's rays by the rain." },
       "defendedDeepvoice": { "src": "./audio/defended_tts/p257_018_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
-    }
-  },
-  {
-    "label": "SPEAKER p262",
-    "audio": {
-      "original": { "src": "./audio/original/p262_249_mic1.wav", "text": "It is a policy which has the full support of the minister." },
-      "deepvoice": { "src": "./audio/original_tts/p262_249_mic1__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
-      "defended": { "src": "./audio/defended/p262_249_mic1.wav", "text": "It is a policy which has the full support of the minister." },
-      "defendedDeepvoice": { "src": "./audio/defended_tts/p262_249_mic1__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
     }
   }
 ]
