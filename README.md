@@ -1,6 +1,6 @@
 # Deepvoice Defense Demo
 
-Interactive `6 × 4` audio comparison for a proactive defense against voice-cloning attacks.
+Interactive `8 × 4` audio comparison for a proactive defense against voice-cloning attacks.
 
 ## Comparison columns
 
