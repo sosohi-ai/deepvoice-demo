@@ -18,12 +18,12 @@
     }
   },
   {
-    "label": "SPEAKER p246",
+    "label": "SPEAKER p254",
     "audio": {
-      "original": { "src": "./audio/original/p246_245_mic2.wav", "text": "In the meantime, the fans would settle for a derby win." },
-      "deepvoice": { "src": "./audio/original_tts/p246_245_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
-      "defended": { "src": "./audio/defended/p246_245_mic2.wav", "text": "In the meantime, the fans would settle for a derby win." },
-      "defendedDeepvoice": { "src": "./audio/defended_tts/p246_245_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
+      "original": { "src": "./audio/original/p254_268_mic1.wav", "text": "He claimed his insurance company contested the damages, not the restaurant." },
+      "deepvoice": { "src": "./audio/original_tts/p254_268_mic1__p03.wav", "text": "She carefully placed the book back on the wooden shelf." },
+      "defended": { "src": "./audio/defended/p254_268_mic1.wav", "text": "He claimed his insurance company contested the damages, not the restaurant." },
+      "defendedDeepvoice": { "src": "./audio/defended_tts/p254_268_mic1__p03.wav", "text": "She carefully placed the book back on the wooden shelf." }
     }
   }
 ]
