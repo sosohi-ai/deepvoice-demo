@@ -171,16 +171,17 @@ main { width: 100%; }
 .hero-legend span { display: inline-flex; align-items: center; gap: 9px; }
 
 .legend-line { width: 26px; height: 3px; border-radius: 3px; }
-.legend-line.normal { background: var(--blue); }
-.legend-line.defended { background: var(--coral); }
+.legend-line.normal { background: var(--coral); }
+.legend-line.defended { background: var(--blue); }
 
 .demo-section {
-  padding: 64px max(32px, calc((100vw - 1260px) / 2));
+  padding: 64px 0;
   color: #f9fafb;
   background: #11151c;
 }
 
 .section-heading {
+  width: min(1260px, calc(100% - 64px));
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -204,7 +205,7 @@ main { width: 100%; }
   letter-spacing: -0.045em;
 }
 
-.effect-copy h2 { font-size: clamp(23px, 2.9vw, 31px); }
+.effect-copy h2 { font-size: clamp(22px, 2.8vw, 30px); }
 
 .section-heading p {
   flex: 0 0 auto;
@@ -214,7 +215,12 @@ main { width: 100%; }
   line-height: 1.65;
 }
 
-.table-shell { overflow-x: auto; padding-bottom: 5px; }
+.table-shell {
+  width: min(1260px, calc(100% - 64px));
+  margin: 0 auto;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
 .path-bands,
 .comparison-table { min-width: 1120px; }
 
@@ -240,10 +246,10 @@ main { width: 100%; }
 }
 
 .path-band i { flex: 1; height: 1px; opacity: 0.45; }
-.normal-path { color: #aebcff; background: rgba(38, 87, 255, 0.12); }
-.normal-path i { background: #6f8cff; }
-.defended-path { color: #ffb4a5; background: rgba(255, 86, 56, 0.12); }
-.defended-path i { background: #ff8068; }
+.normal-path { color: #ffb4a5; background: rgba(255, 86, 56, 0.12); }
+.normal-path i { background: #ff8068; }
+.defended-path { color: #aebcff; background: rgba(38, 87, 255, 0.12); }
+.defended-path i { background: #6f8cff; }
 
 .comparison-table {
   overflow: hidden;
@@ -316,7 +322,7 @@ main { width: 100%; }
   max-width: 185px;
   margin-top: 14px;
   padding-right: 18px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.3;
   letter-spacing: -0.035em;
 }
@@ -331,8 +337,8 @@ main { width: 100%; }
   letter-spacing: 0.08em;
 }
 
-.result-success strong { color: #b8c5ff; }
-.result-fail strong { color: #ffad9d; }
+.result-success strong { color: #ffad9d; }
+.result-fail strong { color: #b8c5ff; white-space: nowrap; }
 
 .audio-row {
   min-height: 142px;
@@ -380,7 +386,7 @@ main { width: 100%; }
 }
 
 .audio-cell:last-child { border-right: 0; }
-.audio-cell:nth-child(4), .audio-cell:nth-child(5) { background: rgba(255, 86, 56, 0.018); }
+.audio-cell:nth-child(4), .audio-cell:nth-child(5) { background: rgba(38, 87, 255, 0.025); }
 
 .audio-card {
   width: 100%;
@@ -404,7 +410,8 @@ main { width: 100%; }
 .audio-card:hover { border-color: #697486; background: #232a35; transform: translateY(-1px); }
 .audio-card:focus-visible { outline: 3px solid rgba(102, 132, 255, 0.45); outline-offset: 2px; }
 .audio-card.is-playing { border-color: var(--blue); background: #202941; }
-.audio-cell.defended .audio-card.is-playing { border-color: var(--coral); background: #33242a; }
+.audio-cell.defended .audio-card.is-playing { border-color: var(--blue); background: #202941; }
+.audio-cell.attack-output .audio-card.is-playing { border-color: var(--coral); background: #33242a; }
 .audio-card.is-missing { border-style: dashed; background: transparent; }
 
 .play-icon {
@@ -418,7 +425,8 @@ main { width: 100%; }
   box-shadow: 0 8px 22px rgba(38, 87, 255, 0.24);
 }
 
-.defended .play-icon { background: var(--coral); box-shadow: 0 8px 22px rgba(255, 86, 56, 0.2); }
+.defended .play-icon { background: var(--blue); box-shadow: 0 8px 22px rgba(38, 87, 255, 0.24); }
+.attack-output .play-icon { background: var(--coral); box-shadow: 0 8px 22px rgba(255, 86, 56, 0.2); }
 .is-missing .play-icon { color: #9aa2ae; background: #2d3440; box-shadow: none; }
 .play-icon svg { width: 14px; height: 14px; fill: white; }
 
@@ -442,7 +450,8 @@ main { width: 100%; }
 }
 
 .is-playing .waveform i { background: #91a6ff; animation: pulse-wave 900ms ease-in-out infinite alternate; animation-delay: calc(var(--i) * -35ms); }
-.defended .is-playing .waveform i { background: #ff9b88; }
+.defended .is-playing .waveform i { background: #91a6ff; }
+.attack-output .is-playing .waveform i { background: #ff9b88; }
 .is-missing .waveform i { opacity: 0.28; }
 
 @keyframes pulse-wave { to { transform: scaleY(0.45); opacity: 0.55; } }
@@ -460,12 +469,14 @@ main { width: 100%; }
 .audio-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .audio-action { flex: 0 0 auto; color: #c6ccd5; }
 .is-playing .audio-action { color: #dbe2ff; }
-.defended .is-playing .audio-action { color: #ffd9d1; }
+.defended .is-playing .audio-action { color: #dbe2ff; }
+.attack-output .is-playing .audio-action { color: #ffd9d1; }
 
 .table-scroll-hint { display: none; }
 
 .upload-note {
-  margin: 18px 3px 0;
+  width: min(1260px, calc(100% - 64px));
+  margin: 18px auto 0;
   color: #7e8794;
   font-size: 11px;
 }
@@ -525,8 +536,8 @@ main { width: 100%; }
 
 .effect-result span { font-weight: 800; }
 .effect-result small { color: #626b77; }
-.normal-card .effect-result { color: var(--blue); background: var(--blue-soft); }
-.defended-card .effect-result { color: var(--coral); background: var(--coral-soft); }
+.normal-card .effect-result { color: var(--coral); background: var(--coral-soft); }
+.defended-card .effect-result { color: var(--blue); background: var(--blue-soft); }
 
 .effect-divider { display: grid; place-items: center; }
 .effect-divider span {
@@ -561,7 +572,8 @@ footer {
 @media (max-width: 900px) {
   .site-header, .hero, .explanation, footer { width: min(100% - 36px, 720px); }
   .hero { padding: 76px 0 86px; }
-  .demo-section { padding: 52px 18px; }
+  .demo-section { padding: 52px 0; }
+  .section-heading, .table-shell, .upload-note { width: min(100% - 36px, 720px); }
   .section-heading { align-items: start; flex-direction: column; }
   .table-scroll-hint { display: block; width: max-content; margin: 14px auto 0; color: #6f7885; font-size: 10px; }
   .effect-diagram { grid-template-columns: 1fr; gap: 14px; }
@@ -578,7 +590,7 @@ footer {
   .desktop-break { display: none; }
   .hero-legend { align-items: start; flex-direction: column; gap: 12px; margin-top: 36px; }
   .section-heading h2, .effect-copy h2 { font-size: 28px; }
-  .effect-copy h2 { font-size: 23px; }
+  .effect-copy h2 { font-size: 22px; }
   .section-heading p br { display: none; }
   .explanation { padding: 22px 0 50px; }
   .effect-card { padding: 24px; }

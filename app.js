@@ -44,8 +44,9 @@ function buildAudioCard(sample, key, rowIndex, columnIndex) {
   const transcript = typeof entry === "object" ? entry.text || "" : "";
   const filename = audio ? audio.split("/").pop() : "음원 파일 선택";
   const isDefended = columnIndex >= 2;
+  const isAttackOutput = columnIndex === 1;
   const cell = document.createElement("div");
-  cell.className = `audio-cell${isDefended ? " defended" : ""}`;
+  cell.className = `audio-cell${isDefended ? " defended" : ""}${isAttackOutput ? " attack-output" : ""}`;
   cell.setAttribute("role", "cell");
 
   const button = document.createElement("button");
@@ -152,7 +153,7 @@ sharedAudio.addEventListener("error", () => {
   activeButton = null;
 });
 
-fetch("./data/samples.json")
+fetch("./data/samples.json?v=20261109-2")
   .then((response) => {
     if (!response.ok) throw new Error("샘플 목록을 불러오지 못했습니다.");
     return response.json();
