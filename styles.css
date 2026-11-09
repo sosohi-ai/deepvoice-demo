@@ -632,13 +632,13 @@ body { background: var(--paper); }
 }
 
 .hero h1 {
-  margin: 0 0 15px;
+  margin: 0 0 10px;
   color: #173f4c;
   font-family: "Pretendard", "SUIT", "Noto Sans KR", "Apple SD Gothic Neo", system-ui, sans-serif;
-  font-size: clamp(36px, 5.5vw, 58px);
-  font-weight: 780;
-  line-height: 1.08;
-  letter-spacing: -0.055em;
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 760;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
 }
 
 .roco-expansion {
@@ -653,6 +653,25 @@ body { background: var(--paper); }
 .roco-expansion strong {
   color: #244f5d;
   font-weight: 700;
+}
+
+.hero-authors {
+  margin: 15px 0 0;
+  color: #6d787d;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.hero-authors sup { color: var(--blue); }
+.hero-authors span { white-space: nowrap; }
+
+.section-heading .demo-lead {
+  max-width: 700px;
+  margin: 13px 0 0;
+  color: #c3c9d2;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -0.025em;
 }
 
 .paper-title {
@@ -804,7 +823,8 @@ body { background: var(--paper); }
   .hero { width: min(100% - 36px, 640px); }
   .header-meta { max-width: 155px; text-align: right; line-height: 1.5; }
   .hero { padding: 36px 0 40px; }
-  .hero h1 { font-size: 36px; }
+  .hero h1 { font-size: 22px; }
+  .section-heading .demo-lead { font-size: 14px; }
   .paper-title { font-size: 24px; }
   .paper-authors { align-items: flex-start; flex-direction: column; gap: 6px; }
   .paper-authors span + span::before { content: none; }
