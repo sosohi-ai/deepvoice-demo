@@ -25,6 +25,10 @@ function playIcon(type = "play") {
   return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>`;
 }
 
+function speakerIcon() {
+  return `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 21c.45-4.5 3.1-7 7.5-7s7.05 2.5 7.5 7z"/></svg>`;
+}
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -74,7 +78,7 @@ function renderRows(samples) {
     const caseCell = document.createElement("div");
     caseCell.className = "case-cell";
     caseCell.setAttribute("role", "rowheader");
-    caseCell.innerHTML = `<strong>${String(rowIndex + 1).padStart(2, "0")}</strong><small>${sample.label || `CASE ${rowIndex + 1}`}</small>`;
+    caseCell.innerHTML = `<span class="speaker-icon" aria-hidden="true">${speakerIcon()}</span><strong>${String(rowIndex + 1).padStart(2, "0")}</strong><small>${escapeHtml(sample.label || `CASE ${rowIndex + 1}`)}</small>`;
     row.appendChild(caseCell);
 
     columnKeys.forEach((key, columnIndex) => {

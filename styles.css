@@ -279,7 +279,7 @@ main { width: 100%; }
 }
 
 .table-header {
-  min-height: 94px;
+  min-height: 108px;
   background: #1b212b;
   border-bottom: 1px solid #343a45;
 }
@@ -313,9 +313,12 @@ main { width: 100%; }
 
 .column-header strong {
   display: block;
-  margin-top: 12px;
-  font-size: 14px;
-  letter-spacing: -0.025em;
+  max-width: 185px;
+  margin-top: 14px;
+  padding-right: 18px;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: -0.035em;
 }
 
 .column-header small {
@@ -352,6 +355,23 @@ main { width: 100%; }
 
 .case-cell strong { color: #f2f4f7; font-size: 14px; }
 .case-cell small { font-size: 8px; letter-spacing: 0.12em; }
+
+.speaker-icon {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  color: #b9c8cd;
+  border: 1px solid #3e4a53;
+  border-radius: 50%;
+  background: #202830;
+}
+
+.speaker-icon svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
 
 .audio-cell {
   position: relative;
