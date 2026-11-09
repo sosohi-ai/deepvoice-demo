@@ -9,7 +9,7 @@ Interactive `5 × 4` audio comparison for a proactive defense against voice-clon
 3. Defense-applied original voice
 4. Deepvoice generated from the defense-applied voice
 
-Each row compares a different generation seed using the same source utterance. Audio paths are declared in `data/samples.json`.
+Each row compares a different generation prompt using the same source utterance. Audio paths and the transcript shown under each player are declared together in `data/samples.json`.
 
 ## Local preview
 

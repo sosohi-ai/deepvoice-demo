@@ -1,47 +1,47 @@
 [
   {
-    "label": "SEED 01",
+    "label": "PROMPT 01",
     "audio": {
-      "original": "./audio/original/p247_253_mic2.wav",
-      "deepvoice": "./audio/original_tts/p247_253_mic2__p01.wav",
-      "defended": "./audio/defended/p247_253_mic2.wav",
-      "defendedDeepvoice": "./audio/defended_tts/p247_253_mic2__p01.wav"
+      "original": { "src": "./audio/original/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
+      "deepvoice": { "src": "./audio/original_tts/p247_253_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
+      "defended": { "src": "./audio/defended/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
+      "defendedDeepvoice": { "src": "./audio/defended_tts/p247_253_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
     }
   },
   {
-    "label": "SEED 02",
+    "label": "PROMPT 02",
     "audio": {
-      "original": "./audio/original/p247_253_mic2.wav",
-      "deepvoice": "./audio/original_tts/p247_253_mic2__p02.wav",
-      "defended": "./audio/defended/p247_253_mic2.wav",
-      "defendedDeepvoice": "./audio/defended_tts/p247_253_mic2__p02.wav"
+      "original": { "src": "./audio/original/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
+      "deepvoice": { "src": "./audio/original_tts/p247_253_mic2__p02.wav", "text": "I didn’t expect the meeting to end so early this afternoon." },
+      "defended": { "src": "./audio/defended/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
+      "defendedDeepvoice": { "src": "./audio/defended_tts/p247_253_mic2__p02.wav", "text": "I didn’t expect the meeting to end so early this afternoon." }
     }
   },
   {
-    "label": "SEED 03",
+    "label": "PROMPT 03",
     "audio": {
-      "original": "./audio/original/p247_253_mic2.wav",
-      "deepvoice": "./audio/original_tts/p247_253_mic2__p03.wav",
-      "defended": "./audio/defended/p247_253_mic2.wav",
-      "defendedDeepvoice": "./audio/defended_tts/p247_253_mic2__p03.wav"
+      "original": { "src": "./audio/original/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
+      "deepvoice": { "src": "./audio/original_tts/p247_253_mic2__p03.wav", "text": "She carefully placed the book back on the wooden shelf." },
+      "defended": { "src": "./audio/defended/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
+      "defendedDeepvoice": { "src": "./audio/defended_tts/p247_253_mic2__p03.wav", "text": "She carefully placed the book back on the wooden shelf." }
     }
   },
   {
-    "label": "SEED 04",
+    "label": "PROMPT 04",
     "audio": {
-      "original": "./audio/original/p247_253_mic2.wav",
-      "deepvoice": "./audio/original_tts/p247_253_mic2__p04.wav",
-      "defended": "./audio/defended/p247_253_mic2.wav",
-      "defendedDeepvoice": "./audio/defended_tts/p247_253_mic2__p04.wav"
+      "original": { "src": "./audio/original/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
+      "deepvoice": { "src": "./audio/original_tts/p247_253_mic2__p04.wav", "text": "Sometimes silence is more powerful than spoken words." },
+      "defended": { "src": "./audio/defended/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
+      "defendedDeepvoice": { "src": "./audio/defended_tts/p247_253_mic2__p04.wav", "text": "Sometimes silence is more powerful than spoken words." }
     }
   },
   {
-    "label": "SEED 05",
+    "label": "PROMPT 05",
     "audio": {
-      "original": "./audio/original/p247_253_mic2.wav",
-      "deepvoice": "./audio/original_tts/p247_253_mic2__p05.wav",
-      "defended": "./audio/defended/p247_253_mic2.wav",
-      "defendedDeepvoice": "./audio/defended_tts/p247_253_mic2__p05.wav"
+      "original": { "src": "./audio/original/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
+      "deepvoice": { "src": "./audio/original_tts/p247_253_mic2__p05.wav", "text": "The train arrived at the station exactly on time." },
+      "defended": { "src": "./audio/defended/p247_253_mic2.wav", "text": "Mr Crawford is no stranger to Scottish Enterprise." },
+      "defendedDeepvoice": { "src": "./audio/defended_tts/p247_253_mic2__p05.wav", "text": "The train arrived at the station exactly on time." }
     }
   }
 ]

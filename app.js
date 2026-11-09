@@ -25,8 +25,19 @@ function playIcon(type = "play") {
   return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>`;
 }
 
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
 function buildAudioCard(sample, key, rowIndex, columnIndex) {
-  const audio = sample.audio?.[key] || "";
+  const entry = sample.audio?.[key] || "";
+  const audio = typeof entry === "string" ? entry : entry.src || "";
+  const transcript = typeof entry === "object" ? entry.text || "" : "";
   const filename = audio ? audio.split("/").pop() : "음원 파일 선택";
   const isDefended = columnIndex >= 2;
   const cell = document.createElement("div");
@@ -43,9 +54,10 @@ function buildAudioCard(sample, key, rowIndex, columnIndex) {
     <span class="play-icon">${playIcon(audio ? "play" : "upload")}</span>
     <span class="waveform" aria-hidden="true">${seededHeights(`${rowIndex}-${columnIndex}-${audio}`)}</span>
     <span class="audio-meta">
-      <span class="audio-name">${filename}</span>
+      <span class="audio-name">${escapeHtml(filename)}</span>
       <span class="audio-action">${audio ? "재생" : "불러오기"}</span>
-    </span>`;
+    </span>
+    <span class="audio-transcript">${escapeHtml(transcript)}</span>`;
 
   button.addEventListener("click", () => handleAudioClick(button));
   cell.appendChild(button);
