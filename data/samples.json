@@ -18,6 +18,15 @@
     }
   },
   {
+    "label": "SPEAKER p283",
+    "audio": {
+      "original": { "src": "./audio/original/p283_183_mic1.wav", "text": "The suspension of the head teacher has been lifted." },
+      "deepvoice": { "src": "./audio/original_tts/p283_183_mic1__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
+      "defended": { "src": "./audio/defended/p283_183_mic1.wav", "text": "The suspension of the head teacher has been lifted." },
+      "defendedDeepvoice": { "src": "./audio/defended_tts/p283_183_mic1__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
+    }
+  },
+  {
     "label": "SPEAKER p257",
     "audio": {
       "original": { "src": "./audio/original/p257_018_mic2.wav", "text": "Aristotle thought that the rainbow was caused by reflection of the sun's rays by the rain." },
