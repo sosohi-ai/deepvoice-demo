@@ -1,14 +1,5 @@
 [
   {
-    "label": "SPEAKER p246",
-    "audio": {
-      "original": { "src": "./audio/original/p246_245_mic2.wav", "text": "In the meantime, the fans would settle for a derby win." },
-      "deepvoice": { "src": "./audio/original_tts/p246_245_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
-      "defended": { "src": "./audio/defended/p246_245_mic2.wav", "text": "In the meantime, the fans would settle for a derby win." },
-      "defendedDeepvoice": { "src": "./audio/defended_tts/p246_245_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
-    }
-  },
-  {
     "label": "SPEAKER p283",
     "audio": {
       "original": { "src": "./audio/original/p283_304_mic2.wav", "text": "It has the potential to be another North Sea." },
@@ -24,6 +15,15 @@
       "deepvoice": { "src": "./audio/original_tts/p253_270_mic1__p04.wav", "text": "Sometimes silence is more powerful than spoken words." },
       "defended": { "src": "./audio/defended/p253_270_mic1.wav", "text": "She has fallen in love with Scotland, however." },
       "defendedDeepvoice": { "src": "./audio/defended_tts/p253_270_mic1__p04.wav", "text": "Sometimes silence is more powerful than spoken words." }
+    }
+  },
+  {
+    "label": "SPEAKER p246",
+    "audio": {
+      "original": { "src": "./audio/original/p246_245_mic2.wav", "text": "In the meantime, the fans would settle for a derby win." },
+      "deepvoice": { "src": "./audio/original_tts/p246_245_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." },
+      "defended": { "src": "./audio/defended/p246_245_mic2.wav", "text": "In the meantime, the fans would settle for a derby win." },
+      "defendedDeepvoice": { "src": "./audio/defended_tts/p246_245_mic2__p01.wav", "text": "The weather today feels surprisingly warmer than yesterday." }
     }
   }
 ]
