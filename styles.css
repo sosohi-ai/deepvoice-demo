@@ -175,7 +175,7 @@ main { width: 100%; }
 .legend-line.defended { background: var(--coral); }
 
 .demo-section {
-  padding: 64px max(32px, calc((100vw - 1440px) / 2));
+  padding: 64px max(32px, calc((100vw - 1260px) / 2));
   color: #f9fafb;
   background: #11151c;
 }
@@ -641,7 +641,7 @@ body { background: var(--paper); }
 }
 
 .hero {
-  width: min(1040px, calc(100% - 48px));
+  width: min(1260px, calc(100% - 64px));
   padding: 24px 0 16px;
 }
 
@@ -688,13 +688,15 @@ body { background: var(--paper); }
 .hero-authors span { white-space: nowrap; }
 
 .section-heading .demo-lead {
-  max-width: 700px;
+  max-width: 1000px;
   margin: 13px 0 0;
   color: #c3c9d2;
   font-size: 20px;
   line-height: 1.55;
   letter-spacing: -0.025em;
 }
+
+.keep-together { white-space: nowrap; }
 
 .paper-title {
   max-width: 860px;
@@ -839,6 +841,10 @@ body { background: var(--paper); }
 .paper-citation p { margin: 0; }
 .paper-citation a { color: var(--blue); text-decoration: none; }
 .paper-citation a:hover, .paper-citation a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 900px) {
+  .hero { width: min(100% - 36px, 720px); }
+}
 
 @media (max-width: 700px) {
   .site-header,
