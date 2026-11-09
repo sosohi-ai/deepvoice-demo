@@ -1,6 +1,6 @@
 # Deepvoice Defense Demo
 
-Interactive `5 × 4` audio comparison for a proactive defense against voice-cloning attacks.
+Interactive `6 × 4` audio comparison for a proactive defense against voice-cloning attacks.
 
 ## Comparison columns
 
@@ -9,7 +9,7 @@ Interactive `5 × 4` audio comparison for a proactive defense against voice-clon
 3. Defense-applied original voice
 4. Deepvoice generated from the defense-applied voice
 
-Each row compares a different generation prompt using the same source utterance. Audio paths and the transcript shown under each player are declared together in `data/samples.json`.
+Each row represents a different speaker, identified by the numeric code after `p`. One generated prompt is used per speaker so the demo focuses on speaker diversity. Audio paths and the transcript shown under each player are declared together in `data/samples.json`.
 
 ## Local preview
 
