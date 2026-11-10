@@ -2,9 +2,26 @@ const sharedAudio = document.querySelector("#shared-audio");
 const rowsContainer = document.querySelector("#audio-rows");
 const fileInput = document.querySelector("#local-file-input");
 
-const columnKeys = ["original", "deepvoice", "defended", "defendedDeepvoice"];
+const isThreeColumnView = new URLSearchParams(window.location.search).get("view") === "3col";
+const columnKeys = isThreeColumnView
+  ? ["original", "deepvoice", "defendedDeepvoice"]
+  : ["original", "deepvoice", "defended", "defendedDeepvoice"];
 let activeButton = null;
 let pendingUploadButton = null;
+
+if (isThreeColumnView) {
+  document.body.classList.add("three-column-view");
+  document.title = "RoCo · Three-Voice Audio Demonstration";
+  document.querySelector(".defended-source")?.setAttribute("hidden", "");
+  const defendedResultNumber = document.querySelector(".result-fail .column-number");
+  if (defendedResultNumber) defendedResultNumber.textContent = "03";
+  const demoLead = document.querySelector(".demo-lead");
+  const demoTitle = document.querySelector("#demo-title");
+  const uploadNote = document.querySelector(".upload-note");
+  if (demoLead) demoLead.textContent = "원본 음성을 복제한 결과와 방어 음성으로 만든 딥보이스를 비교해 보세요.";
+  if (demoTitle) demoTitle.textContent = "세 가지 음성을 직접 비교해 보세요.";
+  if (uploadNote) uploadNote.textContent = "각 행에서 원본 음성, 원본 기반 딥보이스, 방어 음성 기반 딥보이스를 비교합니다.";
+}
 
 function seededHeights(seed) {
   let value = [...seed].reduce((sum, char) => sum + char.charCodeAt(0), 0) || 1;
@@ -153,7 +170,7 @@ sharedAudio.addEventListener("error", () => {
   activeButton = null;
 });
 
-fetch("./data/samples.json?v=20261110-5")
+fetch("./data/samples.json?v=20261110-6")
   .then((response) => {
     if (!response.ok) throw new Error("샘플 목록을 불러오지 못했습니다.");
     return response.json();

@@ -224,11 +224,22 @@ main { width: 100%; }
 .path-bands,
 .comparison-table { min-width: 1120px; }
 
+.three-column-view .path-bands,
+.three-column-view .comparison-table { min-width: 900px; }
+
 .path-bands {
   display: grid;
   grid-template-columns: 88px repeat(4, minmax(210px, 1fr));
   gap: 8px;
   margin-bottom: 9px;
+}
+
+.three-column-view .path-bands {
+  grid-template-columns: 88px repeat(3, minmax(240px, 1fr));
+}
+
+.three-column-view .path-bands .defended-path {
+  grid-column: span 1;
 }
 
 .path-band {
@@ -263,6 +274,11 @@ main { width: 100%; }
 .audio-row {
   display: grid;
   grid-template-columns: 88px repeat(4, minmax(210px, 1fr));
+}
+
+.three-column-view .table-header,
+.three-column-view .audio-row {
+  grid-template-columns: 88px repeat(3, minmax(240px, 1fr));
 }
 
 .table-header {
